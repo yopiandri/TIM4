@@ -30,4 +30,31 @@ for (int i=0; i<jumlahTotalBarang; i++){
    cout<<"Jumlah : "<<namaBarang[i]<<" yang dibeli : "; cin>>jumlahBArang[i]; 
    cout<<endl;
  }cout<<endl;
+  cout<<"------------------------------------------------------"<<endl;
+    cout<<"####----      Struk Mini Market ILKOOM        ----####"<<endl;
+    cout<<"------------------------------------------------------"<<endl;
+    cout<<"NO   Barang  Jumlah  Harga Satuan    Sub Total"<<endl;
+    for(int i = 0; i < jumlahTotalBarang; i++){
+        cout<<setw(1)<<1+1<<" ";
+        cout<<left<<setw(12)<<namaBarang[i];
+        cout<<right<<setw(15)<<jumlahBArang[i];
+        cout<<setw(18)<<hargaBarang[i];
+        cout<<setw(15)<<jumlahBArang[i]*hargaBarang[i];
+        cout<<endl;
+        totalHarga=totalHarga+(jumlahBArang[i]*hargaBarang[i]);
+    }
+    cout<<"------------------------------------------------------"<<endl;
+    cout<<"Total Harga : Rp. "<<totalHarga<<endl<<endl;
+    cout<<"Jumlah Bayar : Rp. "; cin>>jumlahBayar; cout<<endl;
+    
+    while(jumlahBayar-totalHarga<0){
+        cout<<"Maaf, Uang anda kurang. Mohon lakukan ulang pembayaran"<<endl;
+        cout<<"Jumlah Bayar : Rp. "; cin>>jumlahBayar; cout<<endl;
+    }
+    cout<<"Kembalian : Rp. "<<jumlahBayar-totalHarga<<endl<<endl;
+    cout<<"------------------------------------------------------"<<endl;
+    cout<<"#### Terimakasih sudah berbelanja, datang kembali ####"<<endl;
+    cout<<"------------------------------------------------------"<<endl;
+    
+    return 0;
 }
