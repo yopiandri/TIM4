@@ -3,6 +3,7 @@ w#include<iostream>
 using namespace std;
 int main()
 {
+<<<<<<< HEAD
 	cout<<"##   Program Aplikasi Kasir  ##"<<endl;
 cout<<"==============================="<<endl<<endl;
 
@@ -58,3 +59,5 @@ for (int i=0; i<jumlahTotalBarang; i++){
     
     return 0;
 }
+=======
+>>>>>>> dbbf87dc9650293afbb1c74b400690b341c74069
